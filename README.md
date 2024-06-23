@@ -66,11 +66,9 @@ The primary aim is to aggregate StarkNet data with interesting stats, which are 
   
 </details>
 
-## Note
-Please login to TokenFlow to view the working demo.
 
 ## How Did We Do It?
 We experimented with SQL queries on TokenFlow until we found valuable insights that would help the community. The idea was to find interesting data that usual aggregators do not track but would be helpful for users. We thoroughly enjoyed the whole process!
 
 ---
-Enjoy exploring the unique insights with Witness!
+Please login to TokenFlow to view the working demo.
