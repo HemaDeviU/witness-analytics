@@ -6,9 +6,9 @@ The primary aim is to aggregate StarkNet data with interesting stats, which are 
 
 ## Features
 
-### 1. NFT Analysis
-- **Objective**: Track top NFTs with indicators to identify money-laundering activities.
-- **Description**: High transaction counts bilaterally between a group of addresses to inflate prices is a notorious problem with NFTs. Witness tracks these activities and flags the involved addresses as 'flagged addresses' to caution users when engaging with those NFTs. For demonstration purposes, one of the top NFTs is tracked here.
+### 1. Starknet.ID NFT Analysis
+- **Objective**: Track Starknet.ID NFT with indicators to identify abnormal activities.
+- **Description**: High transaction counts bilaterally between a group of addresses to inflate prices is a notorious problem with NFTs. Witness tracks these activities and flags the involved addresses as 'flagged addresses' to caution users when engaging with those NFTs. For demonstration purposes, Starknet.ID Collection is tracked here as it is one the most popular NFTs.
   <details>
   <summary>Latest NFT analysis on a popular NFT</summary>
   
@@ -36,9 +36,9 @@ The primary aim is to aggregate StarkNet data with interesting stats, which are 
   
 </details>
 
-### 4. Most Traded Pairs
-- **Objective**: Identify the most frequently traded pairs of wallet addresses.
-- **Description**: This feature tracks the top pairs of addresses with the highest trading volumes, helping users spot potentially significant trading activities.
+### 4. JediSwap Token Pairs
+- **Objective**: Display the prices of different token pair swaps on JediSwap
+- **Description**: This feature tracks the prices of different token pair swaps by querying the different JediSwap contracts.
   <details>
   <summary>A gold-mine to identify trading pair to invest in liquidity pool</summary>
   
