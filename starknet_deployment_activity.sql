@@ -8,20 +8,21 @@ WITH contract_deployments AS (
         AND block_timestamp >= DATE_SUB(CURRENT_DATE(), INTERVAL 1 YEAR)
 ),
 
-daily_contract_deployments AS (
+weekly_contract_deployments AS (
     SELECT
-        deployment_date,
-        COUNT(DISTINCT contract_address) AS daily_deployment_count
+        YEAR(deployment_date) AS deployment_year,
+        WEEK(deployment_date) AS week_number,
+        COUNT(DISTINCT contract_address) AS weekly_deployment_count
     FROM
         contract_deployments
     GROUP BY
-        deployment_date
+        deployment_year, week_number
 )
 
 SELECT
-    dcd.deployment_date,
-    dcd.daily_deployment_count
+    CONCAT(deployment_year, '-', LPAD(week_number, 2, '0')) AS week_range,
+    weekly_deployment_count
 FROM
-    daily_contract_deployments dcd
+    weekly_contract_deployments
 ORDER BY
-    dcd.deployment_date DESC;
+    deployment_year ASC, week_number ASC;
